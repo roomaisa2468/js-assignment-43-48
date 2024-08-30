@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- ques 1  -->
+     <h2>click the link below</h2>
+    <a href="#" onclick="alert('This is an alert!')">Click me!</a>
+    <!-- ques 2 -->
+    <h2>Click on a Mobile Phone Image</h2>
+
+    <div class="image-container">
+        <img class="img" src="https://images.samsung.com/is/image/samsung/assets/uk/2401/local/mobile-phone-buying-guide/introducing-galaxy-s24/S24Ultra_420x300.png?$420_300_PNG$" alt="Mobile 1" onclick="showMessage('Mobile 1')">
+        <div class="caption">Samsung Galaxy S24</div>
+    </div>
+
+    <div class="image-container">
+        <img class="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6NlNjRXQ1o-UOCs6RTwLL7_zBuFaPi1JLwg&s" alt="Mobile 2" onclick="showMessage('Mobile 2')">
+        <div class="caption">Vivo Y28s</div>
+    </div>
+
+    <div class="image-container">
+        <img class="img" src="https://sumorb.com/wp-content/uploads/2024/05/Xiaomi-Redmi-12-Price-in-Pakistan.png" alt="Mobile 3" onclick="showMessage('Mobile 3')">
+        <div class="caption">redme note 12</div>
+    </div>
+
+    <div class="image-container">
+        <img class="img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCVq6HjGYxR_EfG4pSaieiZQoSBK2GtcbJdPkqF0U6V5OPaFNoKv9Ut_Yhu3Vin365vjkMRZiGauvtkYt3KraIhQ8QfKYu8UIfsxRuf7miER0bdQjIXXiZKrL0qQNFiHarf8iyG2_TNVx5tg-3vVG-TPwGwomJMczEFdMUO0k-_PVLHLA2gTz1zaJXz-F7/s800/oppo-find-x7-1.png" alt="Mobile 4" onclick="showMessage('Mobile 4')">
+        <div class="caption">OPPO X7</div>
+    </div>
+<!-- ques 3 -->
+<table id="studentTable">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Grade</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Rows will be inserted here -->
+    </tbody>
+</table>
+ 
+<!-- ques 4 -->
+ <h2>cake image</h2>
+<img id="img-1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpQn6PqnDdQiUbe8hKk8vgL0UKWuw-Le97YwRPH0hhsnqYCxNf1x2Q6bUeX4Bxrhy-B_E&usqp=CAU" alt="Hover Image" onmouseover="changeImage()" onmouseout="resetImage()">
+    
+<!-- ques 5 -->
+ <h2>The Counter</h2>
+<div class="counter-container">
+    <h1 id="counterValue">0</h1>
+    <button class="counter-btn" id="increaseButton">Increase</button>
+    <button class="counter-btn" id="decreaseButton">Decrease</button>
+</div>
+<script src="./index.js"></script>
+</body>
+</html>
